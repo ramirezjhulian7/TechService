@@ -1,0 +1,102 @@
+[
+    {
+        "id": "basic-web",
+        "title": "Desarrollo de páginas web básicas",
+        "description": "Creamos sitios web modernos, funcionales y adaptados a tus necesidades, con diseño responsive y fácil navegación.",
+        "price": 250.99,
+        "currency": "USD",
+        "image": "/service-image/web.png",
+        "alt": "Icono de una ventana con símbolo de código",
+        "slug": "desarrollo-web-basicas"
+    },
+    {
+        "id": "ecommerce",
+        "title": "E-commerce",
+        "description": "Implementamos tiendas online completas con carrito de compras, gestión de productos y pasarelas de pago seguras.",
+        "price": 549.99,
+        "currency": "USD",
+        "image": "/service-image/ecommerce.png",
+        "alt": "Icono de carrito de compras con símbolo de dólar",
+        "slug": "ecommerce"
+    },
+    {
+        "id": "mobile-apps",
+        "title": "Aplicaciones móviles híbridas",
+        "description": "Desarrollamos apps híbridas compatibles con Android e iOS, optimizadas para rendimiento y experiencia de usuario.",
+        "price": 549.99,
+        "currency": "USD",
+        "image": "/service-image/movil.png",
+        "alt": "Icono de smartphone con engranaje",
+        "slug": "aplicaciones-moviles-hibridas"
+    },
+    {
+        "id": "digital-training",
+        "title": "Capacitación en herramientas digitales",
+        "description": "Cursos prácticos sobre herramientas digitales clave para mejorar la productividad y competitividad de tu negocio.",
+        "price": 70.99,
+        "currency": "USD",
+        "image": "/service-image/capacitacion.png",
+        "alt": "Icono de monitor con engranajes y birrete",
+        "slug": "capacitacion-digital"
+    },
+    {
+        "id": "angular-consulting",
+        "title": "Consultoría en Angular",
+        "description": "Asesoría experta en proyectos con Angular para mejorar arquitectura, rendimiento y escalabilidad de tus aplicaciones.",
+        "price": 70.99,
+        "currency": "USD",
+        "image": "/service-image/angular.png",
+        "alt": "Icono del logotipo de Angular con flechas circulares",
+        "slug": "consultoria-angular"
+    },
+    {
+        "id": "seo-optimization",
+        "title": "Optimización SEO y performance",
+        "description": "Mejoramos el posicionamiento en buscadores y optimizamos el rendimiento de tu sitio web para mayor visibilidad.",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "/service-image/seo.png",
+        "alt": "Icono de lupa con texto SEO",
+        "slug": "optimizacion-seo-performance"
+    },
+    {
+        "id": "support-maintenance",
+        "title": "Soporte y mantenimiento mensual",
+        "description": "Servicio de mantenimiento y soporte técnico continuo para garantizar la estabilidad y seguridad de tu sitio web.",
+        "price": 70.99,
+        "currency": "USD",
+        "image": "/service-image/soporte.png",
+        "alt": "Icono de engranaje con llave inglesa",
+        "slug": "soporte-mantenimiento"
+    },
+    {
+        "id": "hosting-installation",
+        "title": "Instalación de hosting y dominios",
+        "description": "Configuramos tu hosting y dominio para que tu proyecto esté disponible en línea de forma rápida y profesional.",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "/service-image/hosting.png",
+        "alt": "Icono de servidores y globo terráqueo",
+        "slug": "hosting-dominios"
+    },
+    {
+        "id": "payment-gateway",
+        "title": "Integración con pasarelas de pago",
+        "description": "Integramos sistemas de pago como PayPal, Stripe y otros para facilitar transacciones seguras en tu web.",
+        "price": 99.99,
+        "currency": "USD",
+        "image": "/service-image/pasarela.png",
+        "alt": "Icono de tarjeta y símbolo de dólar conectado",
+        "slug": "integracion-pasarelas-pago"
+    },
+    {
+        "id": "custom-software",
+        "title": "Desarrollo de software a medida",
+        "description": "Creamos aplicaciones personalizadas adaptadas a los procesos y necesidades específicas de tu negocio.",
+        "price": 799.99,
+        "currency": "USD",
+        "image": "/service-image/web.png",
+        "alt": "Icono de engranajes y monitor representando software",
+        "slug": "desarrollo-software-medida"
+    }
+]

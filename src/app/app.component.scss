@@ -58,6 +58,22 @@
 	padding-top: 1rem;
 }
 
+.btn-services {
+	background: var(--color-beige);
+	color: var(--color-teal-dark);
+	border-radius: 999px;
+	padding: .35rem .9rem;
+	border: 1px solid rgba(3,140,127,0.06);
+	text-decoration: none;
+}
+.btn-home {
+	background: var(--color-teal-dark);
+	color: #fff;
+	border-radius: 999px;
+	padding: .35rem .9rem;
+	text-decoration: none;
+}
+
 /* Responsive logo in navbar */
 .navbar-brand img {
 	display: block;

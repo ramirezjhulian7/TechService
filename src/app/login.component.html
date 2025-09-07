@@ -1,0 +1,34 @@
+<section class="login-hero">
+  <div class="container">
+    <div class="login-grid">
+      <div class="login-left">
+        <h1 class="login-title">Iniciar sesión</h1>
+        <p class="login-sub">Ingresa tu usuario y contraseña</p>
+
+        <form (ngSubmit)="submit()" [formGroup]="form" novalidate aria-live="polite">
+          <label for="username" class="visually-hidden">Usuario</label>
+          <input id="username" type="text" formControlName="username" autocomplete="username" placeholder="Usuario" class="input-field" [attr.aria-invalid]="form.get('username')?.invalid ? true : null" />
+          <div *ngIf="form.get('username')?.touched && form.get('username')?.invalid" class="field-error">El usuario es requerido.</div>
+
+          <label for="password" class="visually-hidden">Contraseña</label>
+          <input id="password" type="password" formControlName="password" autocomplete="current-password" placeholder="Contraseña" class="input-field" [attr.aria-invalid]="form.get('password')?.invalid ? true : null" />
+          <div *ngIf="form.get('password')?.touched && form.get('password')?.invalid" class="field-error">La contraseña es requerida.</div>
+
+          <a href="#" class="help-link">¿Olvidaste tu contraseña o usuario?</a>
+
+          <div class="actions">
+            <button type="submit" class="btn btn-primary btn-login" [disabled]="loading">Ingresar</button>
+            <button type="button" class="btn btn-secondary btn-create">Crear usuario</button>
+          </div>
+
+          <div *ngIf="error" class="form-error" role="alert">{{ error }}</div>
+        </form>
+      </div>
+
+      <div class="login-right">
+        <img src="/LogoNavbar.png" alt="TechService logo" class="login-logo" />
+        <div class="brand">TechService</div>
+      </div>
+    </div>
+  </div>
+</section>

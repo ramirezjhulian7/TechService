@@ -1,0 +1,23 @@
+<main class="service-detail">
+  <div class="container">
+    <div class="actions">
+      <button class="btn-back" (click)="goBack()">← Volver</button>
+    </div>
+    <div *ngIf="service; else notFound" class="grid">
+      <section class="left">
+        <h1 class="title">{{ service.title }}</h1>
+        <p class="desc">{{ service.description }}</p>
+        <div class="price">Valor {{ service.price | currency:service.currency:'symbol' }}</div>
+      </section>
+
+      <aside class="right">
+        <div class="media">
+          <img [src]="service.image || '/placeholder-service.png'" [alt]="service.alt || service.title" />
+        </div>
+      </aside>
+    </div>
+    <ng-template #notFound>
+      <p>Servicio no encontrado.</p>
+    </ng-template>
+  </div>
+</main>

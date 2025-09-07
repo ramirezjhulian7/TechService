@@ -1,0 +1,25 @@
+<section class="services-hero">
+  <div class="container">
+    <header class="services-header">
+      <h1>Servicios</h1>
+      <p class="subtitle">Nuestra variada selección</p>
+    </header>
+
+    <div class="services-grid">
+      <a class="card-link" *ngFor="let c of cards" [routerLink]="['/services', c.id]">
+        <article class="card" tabindex="0">
+          <div class="card-media">
+            <img [src]="c.image || '/placeholder-service.png'" [alt]="c.alt || c.title" />
+          </div>
+          <div class="card-body">
+            <p class="card-desc">{{ c.description }}</p>
+          </div>
+          <div class="card-foot">
+            <div class="card-title">{{ c.title }}</div>
+            <div class="card-price">{{ c.price | currency:c.currency:'symbol' }}</div>
+          </div>
+        </article>
+      </a>
+    </div>
+  </div>
+</section>
