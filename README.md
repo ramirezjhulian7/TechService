@@ -1,61 +1,5 @@
 # TechService
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
-
-## Development server
-
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-# TechService
-
 Resumen rápido
 ----------------
 Proyecto frontend en Angular que implementa una landing, autenticación básica con usuarios estáticos (JSON), un catálogo de servicios y un panel de administración (CRUD). Se integró Bootstrap para la UI y se añadieron utilidades y componentes para trabajar con datos locales JSON.
@@ -95,8 +39,8 @@ Lista de usuarios (para pruebas)
 Los usuarios se encuentran en `src/assets/data/users.json` y son los siguientes:
 
 - jhulian / jh123 (role: admin)
-- felipe / felipe123 (role: user)
-- daniel / daniel123 (role: user)
+- felipe / felipe123 (role: admin)
+- daniel / daniel123 (role: admin)
 - profe / profe123 (role: admin)
 
 Instalación y ejecución
@@ -149,7 +93,3 @@ Consejos y siguientes pasos sugeridos
 - Implementar guards y roles más estrictos para proteger rutas según `role` del usuario.
 - Añadir validaciones y pruebas unitarias para `UserService`, `AuthService` y `AdminComponent`.
 - Mejorar UX con confirmaciones, deshacer y optimizaciones de rendimiento para listas grandes.
-
-Contacto
--------
-Si quieres que integre la API de persistencia (Express) y la ponga en marcha, dímelo y la preparo (instalación y scripts incluidos).
