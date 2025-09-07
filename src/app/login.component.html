@@ -18,7 +18,7 @@
 
           <div class="actions">
             <button type="submit" class="btn btn-primary btn-login" [disabled]="loading">Ingresar</button>
-            <button type="button" class="btn btn-secondary btn-create">Crear usuario</button>
+            <button type="button" class="btn btn-secondary btn-create" (click)="goToDo()">Crear usuario</button>
           </div>
 
           <div *ngIf="error" class="form-error" role="alert">{{ error }}</div>

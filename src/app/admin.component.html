@@ -1,0 +1,86 @@
+<div class="container-fluid admin">
+  <div class="row">
+    <aside class="col-md-3 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h1 class="h4 mb-1">Servicios</h1>
+          <p class="subtitle text-muted mb-0">Administración de servicios (CRUD)</p>
+        </div>
+      </div>
+    </aside>
+
+    <main class="col-md-9">
+      <div class="d-flex gap-2 mb-3">
+        <button class="btn btn-light" (click)="addNew()">+ Agregar servicio</button>
+        <button class="btn btn-outline-success" (click)="downloadJSON()">Descargar JSON</button>
+      </div>
+
+      <div class="table-responsive">
+        <table class="table table-hover table-bordered align-middle">
+          <thead class="table-light">
+            <tr>
+              <th>Id</th>
+              <th>Título</th>
+              <th>Precio</th>
+              <th>Imagen</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let s of services; let i = index">
+              <td class="text-muted small">{{ s.id }}</td>
+              <td>{{ s.title }}</td>
+              <td>{{ s.price | currency:s.currency }}</td>
+              <td><img [src]="s.image" alt="" class="img-thumbnail" style="width:56px; height:56px; object-fit:cover;"/></td>
+              <td>
+                <div class="d-flex gap-2">
+                  <button class="btn btn-sm btn-outline-primary" (click)="edit(i)">Editar</button>
+                  <button class="btn btn-sm btn-outline-danger" (click)="delete(i)">Borrar</button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div *ngIf="showForm" class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ editingIndex === null ? 'Nuevo servicio' : 'Editar servicio' }}</h5>
+          <form class="row g-3" (ngSubmit)="save()">
+            <div class="col-md-7">
+              <div class="mb-2">
+                <label class="form-label">Nombre</label>
+                <input class="form-control" [(ngModel)]="formModel.title" name="title" required />
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Precio</label>
+                <input class="form-control" type="number" [(ngModel)]="formModel.price" name="price" />
+              </div>
+              <div class="mb-2">
+                <label class="form-label">Descripción</label>
+                <textarea class="form-control" rows="4" [(ngModel)]="formModel.description" name="description"></textarea>
+              </div>
+              <div class="form-check mb-2">
+                <input class="form-check-input" type="checkbox" [(ngModel)]="formModel.onSale" name="onSale" id="onSaleCheck" />
+                <label class="form-check-label" for="onSaleCheck">En promoción</label>
+              </div>
+            </div>
+
+            <div class="col-md-5">
+              <div class="mb-3">
+                <label class="form-label">Imagen (subir)</label>
+                <input class="form-control" type="file" (change)="handleFileInput($event)" />
+                <div *ngIf="formModel.image" class="mt-2">
+                  <img [src]="formModel.image" alt="preview" class="img-fluid rounded" style="max-height:160px; object-fit:contain;" />
+                </div>
+              </div>
+              <div class="d-grid mt-3">
+                <button type="submit" class="btn btn-outline-secondary">Guardar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

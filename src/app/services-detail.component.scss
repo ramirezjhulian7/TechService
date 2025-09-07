@@ -11,6 +11,11 @@
 .btn-back { background: transparent; border: 1px solid rgba(13,13,13,0.08); padding: .4rem .7rem; border-radius: .5rem; cursor: pointer; }
 .btn-back:hover { filter: brightness(0.98); }
 
+.action-buttons { margin-top: 1.25rem; display:flex; gap:.6rem; align-items:center; }
+.btn-solicitar { background: #A9D9D0; color: #027373; padding:.55rem .9rem; border-radius:.6rem; text-decoration:none; font-weight:600; }
+.btn-crear { background: #fff; color: #027373; padding:.55rem .9rem; border-radius:.6rem; text-decoration:none; border:1px solid rgba(3,140,127,0.08); }
+.btn-solicitar:hover, .btn-crear:hover { filter: brightness(0.98); }
+
 @media (max-width: 900px) {
   .grid { grid-template-columns: 1fr; }
   .media { margin-top: 1rem; }

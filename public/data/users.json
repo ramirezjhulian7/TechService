@@ -10,13 +10,13 @@
       "id": 2,
       "username": "felipe",
       "password": "felipe123",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": 3,
       "username": "daniel",
       "password": "daniel123",
-      "role": "user"
+      "role": "admin"
     },
     {
       "id": 4,

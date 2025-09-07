@@ -45,4 +45,8 @@ export class LoginComponent {
       this.error = 'Error al validar credenciales.';
     });
   }
+
+  goToDo() {
+    this.router.navigateByUrl('/proximamente');
+  }
 }

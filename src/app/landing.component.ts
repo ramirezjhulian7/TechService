@@ -13,4 +13,7 @@ export class LandingComponent {
   goServices() {
     this.router.navigateByUrl('/services');
   }
+  goToDo() {
+    this.router.navigateByUrl('/proximamente');
+  }
 }

@@ -1,13 +1,17 @@
 <main class="service-detail">
   <div class="container">
     <div class="actions">
-      <button class="btn-back" (click)="goBack()">← Volver</button>
+      <button class="btn-crear" (click)="goBack()">← Volver</button>
     </div>
     <div *ngIf="service; else notFound" class="grid">
       <section class="left">
         <h1 class="title">{{ service.title }}</h1>
         <p class="desc">{{ service.description }}</p>
         <div class="price">Valor {{ service.price | currency:service.currency:'symbol' }}</div>
+        <div class="action-buttons">
+          <a class="btn-solicitar" routerLink="/proximamente" role="button" aria-label="Solicitar servicio">Solicitar servicio</a>
+          <a class="btn-crear" routerLink="/admin" role="button" aria-label="Crear usuario">Crear servicio</a>
+        </div>
       </section>
 
       <aside class="right">
