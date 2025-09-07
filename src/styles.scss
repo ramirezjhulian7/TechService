@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global typography and font stacks */
+:root {
+	--ff-serif: 'Lora', serif;
+	--ff-sans: 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	--ff-display: 'Montserrat', 'Source Sans 3', system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+
+	/* App color palette */
+	--color-teal-dark: #027373; /* Verde azulado oscuro */
+	--color-turquoise: #038C7F; /* Verde turquesa */
+	--color-mint: #A9D9D0; /* Verde menta claro */
+	--color-beige: #F2E7DC; /* Beige muy claro */
+	--color-almost-black: #0D0D0D; /* Negro casi absoluto */
+
+		/* Global background gradient for all components */
+		--app-bg-gradient: linear-gradient(to bottom, #A9D9D0 0%, #FFFFFF 100%);
+
+	/* Map Bootstrap tokens so components follow our palette */
+	--bs-primary: var(--color-turquoise);
+	--bs-primary-rgb: 3,140,127;
+	--bs-body-bg: var(--color-beige);
+	--bs-body-color: var(--color-almost-black);
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: var(--ff-sans);
+	font-size: 16px;
+	line-height: 1.5;
+	color: var(--bs-body-color);
+	background: var(--app-bg-gradient);
+	background-attachment: fixed;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings use Montserrat for a modern display look */
+h1, h2, h3, h4, h5, h6 {
+	font-family: var(--ff-display);
+	margin: 0 0 0.5rem 0;
+}
+
+/* Use Lora for emphasized / long-form text */
+.prose {
+	font-family: var(--ff-serif);
+	font-size: 1rem;
+	line-height: 1.8;
+}
+
+/* Utility: small helper to apply display font */
+.display-font {
+	font-family: var(--ff-display);
+}
+
+/* You can import other global partials below */
+
+/* Small utility classes using the app palette */
+.app-bg-teal-dark { background-color: var(--color-teal-dark) !important; color: #fff !important; }
+.app-bg-turquoise { background-color: var(--color-turquoise) !important; color: #fff !important; }
+.app-bg-mint { background-color: var(--color-mint) !important; color: var(--color-almost-black) !important; }
+.app-bg-beige { background-color: var(--color-beige) !important; color: var(--color-almost-black) !important; }
+
+/* Utility to force the app gradient on any element */
+.app-bg-gradient { background: var(--app-bg-gradient) !important; }
+
+.app-text-teal-dark { color: var(--color-teal-dark) !important; }
+.app-text-turquoise { color: var(--color-turquoise) !important; }
+.app-text-mint { color: var(--color-mint) !important; }
+.app-text-beige { color: var(--color-beige) !important; }
+.app-text-almost-black { color: var(--color-almost-black) !important; }
