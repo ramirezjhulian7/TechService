@@ -58,7 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 Resumen rápido
 ----------------
-Proyecto frontend en Angular que implementa una landing, autenticación básica con usuarios estáticos (JSON), un catálogo de servicios y un panel de administración (CRUD simulado). Se integró Bootstrap para la UI y se añadieron utilidades y componentes para trabajar con datos locales JSON.
+Proyecto frontend en Angular que implementa una landing, autenticación básica con usuarios estáticos (JSON), un catálogo de servicios y un panel de administración (CRUD). Se integró Bootstrap para la UI y se añadieron utilidades y componentes para trabajar con datos locales JSON.
 
 Lo que se implementó
 ---------------------
@@ -69,7 +69,7 @@ Lo que se implementó
 - Login funcional (componente `LoginComponent`) que valida credenciales contra `src/assets/data/users.json`.
 - Componente `ServicesComponent`: muestra cards con los servicios leídos desde `public/data/services.json`.
 - Detalle de servicio (`ServicesDetailComponent`) con layout en dos columnas (texto + media) al hacer clic en una card.
-- `AdminComponent`: interfaz para administración de servicios (CRUD simulado en memoria). Permite agregar/editar/borrar filas y descargar el JSON resultante.
+- `AdminComponent`: interfaz para administración de servicios (CRUD en memoria). Permite agregar/editar/borrar filas y descargar el JSON resultante.
 - Guardas y servicios: `UserService` y `AuthService` para validar credenciales y mantener estado de sesión (BehaviorSubject + localStorage persistente).
 - Componente `ProximamenteComponent` para funciones pendientes.
 
