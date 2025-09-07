@@ -137,7 +137,7 @@ Archivos y componentes importantes
 - `src/app/login.component.*` — login con validación y accesibilidad.
 - `src/app/services.component.*` — listado de servicios (cards).
 - `src/app/services-detail.component.*` — detalle de servicio.
-- `src/app/admin.component.*` — administración (tabla, formulario, CRUD simulado).
+- `src/app/admin.component.*` — administración (tabla, formulario, CRUD).
 - `src/app/user.service.ts` — carga usuarios desde JSON.
 - `src/app/auth.service.ts` — estado de sesión y persistencia en localStorage.
 - `public/data/services.json` — datos de servicios (JSON usado por `ServicesComponent`).
